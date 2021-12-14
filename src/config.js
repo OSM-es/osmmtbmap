@@ -184,7 +184,7 @@ var config = {
 				
 		
 		{
-			group: 'MTB:Scale',
+			group: 'Test',
 			title: '0',
 			query: '(nwr["mtb:scale"="0"]({{bbox}}););out meta;',
 			iconSrc: imgSrc + 'icones_llum/lit_osm_none.svg',
