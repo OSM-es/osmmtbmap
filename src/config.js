@@ -184,9 +184,9 @@ var config = {
 				
 		
 		{
-			group: 'Percep',
-			title: 'No hi ha llum',
-			query: '(node["lit:perceived"="none"]({{bbox}}););out meta;',
+			group: 'MTB:Scale',
+			title: '0',
+			query: '(nwr["mtb:scale"="0"]({{bbox}}););out meta;',
 			iconSrc: imgSrc + 'icones_llum/lit_osm_none.svg',
 			iconStyle: 'background-color:#FFFFFF',
 						scale: 1,
@@ -280,10 +280,10 @@ var config = {
 			}
 		},
 		{
-			group: 'Percep',
-			title: 'No hi ha llum (via)',
-			query: '(way[highway]["lit:perceived"="none"]({{bbox}});node(w););out;',
-			iconSrc: imgSrc + 'base/dots.png',
+			group: 'mtb:scale',
+			title: '0',
+			query: '(nwr["mtb:scale"="0"]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/line.gif',
 			iconStyle: 'background-color:#000000',
 			style: function () {
 				var fill = new ol.style.Fill({
