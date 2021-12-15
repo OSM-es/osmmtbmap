@@ -270,7 +270,7 @@ var config = {
 			iconSrc: imgSrc + 'base/line.png',
 			iconStyle: 'background-color:#00ff00',
 			style: function (feature) {
-				var key_regex = /^mtb$/
+				var key_regex = /^name$/
 				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
 				var name = feature.get(name_key) || '';
 				var fill = new ol.style.Fill({
