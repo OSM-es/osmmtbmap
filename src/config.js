@@ -278,6 +278,17 @@ var config = {
 					width: 5
 				});
 				var style = new ol.style.Style({
+					image: new ol.style.Circle({
+						fill: fill,
+						stroke: stroke,
+						radius: 5
+					}),
+							text: new ol.style.Text({
+								color: 'white',
+								text: name,
+								placement:'line',
+								font: '14px Verdana'
+							}),
 					fill: fill,
 					stroke: stroke
 				});
