@@ -278,9 +278,8 @@ var config = {
 				});
 
 				var stroke = new ol.style.Stroke({
-					color: '#00ff00',
-					opacity: '0.1',
-					width: 5
+					color: 'rgba(0,128,0,0.1)',
+					width: 1
 				});
 				var style = new ol.style.Style({
 					image: new ol.style.Circle({
@@ -289,7 +288,7 @@ var config = {
 						radius: 5
 					}),
 							text: new ol.style.Text({
-								color: 'white',
+								color: 'rgba(0,128,0,0.1)',
 								text: name,
 								font: '14px Verdana',
 								offsetX : 0,
