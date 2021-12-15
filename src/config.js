@@ -364,7 +364,7 @@ var config = {
 							text: new ol.style.Text({
 								text: name,
 								color: 'rgba(255,0,0,0.4)',
-								font: '14px Gill Sans Extrabold',
+								font: '12px Verdana bold',
 								offsetX : 0,
 								offsetY : 12
 							}),
