@@ -291,6 +291,7 @@ var config = {
 								text: name,
 								color: 'rgba(0,128,0,0.4)',
 								font: '14px Verdana',
+								placement: 'line',
 								offsetX : 0,
 								offsetY : 12
 							}),
