@@ -368,13 +368,13 @@ var config = {
 			title: 'mtb:scale=4',
 			query: '(nwr["mtb:scale"="4"]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/tdot.png',
-			iconStyle: 'background-color:#ff4500',
+			iconStyle: 'background-color:#c23b22',
 			style: function () {
 				var fill = new ol.style.Fill({
-					color: 'rgba(255,69,0,0.4)'
+					color: 'rgba(194,59,34,0.4)'
 				});
 				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,69,0,0.4)',
+					color: 'rgba(194,59,34,0.4)',
 					width: 5
 				});
 				var style = new ol.style.Style({
