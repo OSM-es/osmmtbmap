@@ -278,7 +278,7 @@ var config = {
 				});
 
 				var stroke = new ol.style.Stroke({
-					color: 'rgba(0,128,0,0.1)',
+					color: 'rgba(0,128,0,0.4)',
 					width: 1
 				});
 				var style = new ol.style.Style({
@@ -288,8 +288,8 @@ var config = {
 						radius: 5
 					}),
 							text: new ol.style.Text({
-								color: 'rgba(0,128,0,0.1)',
 								text: name,
+								color: 'rgba(0,128,0,0.4)',
 								font: '14px Verdana',
 								offsetX : 0,
 								offsetY : 12
