@@ -278,7 +278,8 @@ var config = {
 				});
 
 				var stroke = new ol.style.Stroke({
-					color: '#008000',
+					color: '#00ff00',
+					opacity: '0.1',
 					width: 5
 				});
 				var style = new ol.style.Style({
@@ -290,7 +291,9 @@ var config = {
 							text: new ol.style.Text({
 								color: 'white',
 								text: name,
-								font: '14px Verdana'
+								font: '14px Verdana',
+								offsetX : 0,
+								offsetY : 12
 							}),
 					fill: fill,
 					stroke: stroke
