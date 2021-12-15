@@ -773,48 +773,7 @@ var config = {
 				return style;
 			}
 		},
-		{
-			group: 'mtb:scale',
-			title: 'mtb:scale:imba=5',
-			query: '(nwr["mtb:scale:imba"="5"]({{bbox}});node(w););out;',
-			iconSrc: imgSrc + 'base/tdot2.png',
-			iconStyle: 'background-color:#c23b22',
-			style: function () {
-				var fill = new ol.style.Fill({
-					color: 'rgba(194,59,34,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(194,59,34,0.4)',
-					width: 5
-				});
-				var style = new ol.style.Style({
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-		},
-		{
-			group: 'mtb:scale',
-			title: 'mtb:scale:imba=6',
-			query: '(nwr["mtb:scale:imba"="6"]({{bbox}});node(w););out;',
-			iconSrc: imgSrc + 'base/tdot2.png',
-			iconStyle: 'background-color:#800000',
-			style: function () {
-				var fill = new ol.style.Fill({
-					color: 'rgba(128,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(128,0,0,0.4)',
-					width: 5
-				});
-				var style = new ol.style.Style({
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-		},
+
 		{
 			group: 'Percep',
 			title: 'Llum mínima (via)',
