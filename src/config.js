@@ -269,12 +269,16 @@ var config = {
 			query: '(nwr["mtb"="yes"]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/line.png',
 			iconStyle: 'background-color:#00ff00',
-			style: function () {
+			style: function (feature) {
+				var key_regex = /^mtb$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
 				var fill = new ol.style.Fill({
-					color: 'rgba(0,255,0,0.4)'
+					color: 'rgba(0,128,0,0.1)'
 				});
+
 				var stroke = new ol.style.Stroke({
-					color: 'rgba(0,255,0,0.4)',
+					color: '#008000',
 					width: 5
 				});
 				var style = new ol.style.Style({
