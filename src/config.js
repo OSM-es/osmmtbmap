@@ -291,7 +291,6 @@ var config = {
 								text: name,
 								color: 'rgba(0,128,0,0.4)',
 								font: '14px Verdana',
-								placement: 'line',
 								offsetX : 0,
 								offsetY : 12
 							}),
@@ -305,17 +304,70 @@ var config = {
 			group: 'mtb',
 			title: 'mtb=designated',
 			query: '(nwr["mtb"="designated"]({{bbox}});node(w););out;',
-			iconSrc: imgSrc + 'base/tdot.png',
+			iconSrc: imgSrc + 'base/line.png',
 			iconStyle: 'background-color:#003399',
-			style: function () {
+			style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
 				var fill = new ol.style.Fill({
-					color: 'rgba(0,51,153,0.4)'
+					color: 'rgba(0,51,153,0.1)'
 				});
+
 				var stroke = new ol.style.Stroke({
 					color: 'rgba(0,51,153,0.4)',
-					width: 5
+					width: 1
 				});
 				var style = new ol.style.Style({
+					image: new ol.style.Circle({
+						fill: fill,
+						stroke: stroke,
+						radius: 5
+					}),
+							text: new ol.style.Text({
+								text: name,
+								color: 'rgba(0,128,0,0.4)',
+								font: '14px Gill Sans Extrabold',
+								offsetX : 0,
+								offsetY : 12
+							}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
+			group: 'mtb',
+			title: 'mtb=no',
+			query: '(nwr["mtb"="no"]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/tdot.png',
+			iconStyle: 'background-color:#ff0000',
+			style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.1)'
+				});
+
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,0.4)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Circle({
+						fill: fill,
+						stroke: stroke,
+						radius: 5
+					}),
+							text: new ol.style.Text({
+								text: name,
+								color: 'rgba(255,0,0,0.4)',
+								font: '14px Gill Sans Extrabold',
+								offsetX : 0,
+								offsetY : 12
+							}),
 					fill: fill,
 					stroke: stroke
 				});
