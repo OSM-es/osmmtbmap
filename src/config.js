@@ -375,6 +375,191 @@ var config = {
 			}
 		},
 		{
+			group: 'mtb',
+			title: 'mtb:type=crosscountry',
+			query: '(nwr["mtb:type"="crosscountry"]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/line.png',
+			iconStyle: 'background-color:#00ff00',
+			style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(0,128,0,0.1)'
+				});
+
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(0,128,0,0.4)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Circle({
+						fill: fill,
+						stroke: stroke,
+						radius: 5
+					}),
+							text: new ol.style.Text({
+								text: name,
+								color: 'rgba(0,128,0,0.4)',
+								font: '14px Verdana',
+								offsetX : 0,
+								offsetY : 12
+							}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
+			group: 'mtb',
+			title: 'mtb:type=allmountain',
+			query: '(nwr["mtb:type"="allmountain"]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/line.png',
+			iconStyle: 'background-color:#003399',
+			style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(0,51,153,0.1)'
+				});
+
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(0,51,153,0.4)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Circle({
+						fill: fill,
+						stroke: stroke,
+						radius: 5
+					}),
+							text: new ol.style.Text({
+								text: name,
+								color: 'rgba(0,128,0,0.4)',
+								font: '14px Gill Sans Extrabold',
+								offsetX : 0,
+								offsetY : 12
+							}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
+			group: 'mtb',
+			title: 'mtb:type=downhill',
+			query: '(nwr["mtb:type"="downhill"]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/tdot.png',
+			iconStyle: 'background-color:#ff0000',
+			style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.1)'
+				});
+
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,0.4)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Circle({
+						fill: fill,
+						stroke: stroke,
+						radius: 5
+					}),
+							text: new ol.style.Text({
+								text: name,
+								color: 'rgba(255,0,0,0.4)',
+								font: '12px Verdana',
+								offsetX : 0,
+								offsetY : 12
+							}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
+			group: 'mtb',
+			title: 'mtb:type=freeride',
+			query: '(nwr["mtb:type"="freeride"]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/line.png',
+			iconStyle: 'background-color:#003399',
+			style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(0,51,153,0.1)'
+				});
+
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(0,51,153,0.4)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Circle({
+						fill: fill,
+						stroke: stroke,
+						radius: 5
+					}),
+							text: new ol.style.Text({
+								text: name,
+								color: 'rgba(0,128,0,0.4)',
+								font: '14px Gill Sans Extrabold',
+								offsetX : 0,
+								offsetY : 12
+							}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
+			group: 'mtb',
+			title: 'mtb:type=trail',
+			query: '(nwr["mtb:type"="trail"]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/line.png',
+			iconStyle: 'background-color:#003399',
+			style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(0,51,153,0.1)'
+				});
+
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(0,51,153,0.4)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Circle({
+						fill: fill,
+						stroke: stroke,
+						radius: 5
+					}),
+							text: new ol.style.Text({
+								text: name,
+								color: 'rgba(0,128,0,0.4)',
+								font: '14px Gill Sans Extrabold',
+								offsetX : 0,
+								offsetY : 12
+							}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
 			group: 'mtb:scale',
 			title: 'mtb:scale=0',
 			query: '(nwr["mtb:scale"="0"]({{bbox}});node(w););out;',
