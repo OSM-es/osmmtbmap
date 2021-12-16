@@ -777,7 +777,7 @@ var config = {
 			group: 'mtb:scale',
 			title: 'class:bicycle:mtb=3',
 			query: '(nwr["class:bicycle:mtb"="3"]({{bbox}});node(w););out;',
-			iconSrc: imgSrc + 'base/line.png',
+			iconSrc: imgSrc + 'base/tlineline.png',
 			iconStyle: 'background-color:#00ff00',
 			style: function () {
 				var fill = new ol.style.Fill({
@@ -798,7 +798,7 @@ var config = {
 			group: 'mtb:scale',
 			title: 'class:bicycle:mtb=2',
 			query: '(nwr["class:bicycle:mtb"="2"]({{bbox}});node(w););out;',
-			iconSrc: imgSrc + 'base/line.png',
+			iconSrc: imgSrc + 'base/tlineline.png',
 			iconStyle: 'background-color:#ffff00',
 			style: function () {
 				var fill = new ol.style.Fill({
@@ -819,7 +819,7 @@ var config = {
 			group: 'mtb:scale',
 			title: 'class:bicycle:mtb=1',
 			query: '(nwr["class:bicycle:mtb"="1"]({{bbox}});node(w););out;',
-			iconSrc: imgSrc + 'base/line.png',
+			iconSrc: imgSrc + 'base/tlineline.png',
 			iconStyle: 'background-color:#ffe135',
 			style: function () {
 				var fill = new ol.style.Fill({
@@ -840,7 +840,7 @@ var config = {
 			group: 'mtb:scale',
 			title: 'class:bicycle:mtb=0',
 			query: '(nwr["class:bicycle:mtb"="0"]({{bbox}});node(w););out;',
-			iconSrc: imgSrc + 'base/line.png',
+			iconSrc: imgSrc + 'base/tlineline.png',
 			iconStyle: 'background-color:#ffa500',
 			style: function () {
 				var fill = new ol.style.Fill({
@@ -861,7 +861,7 @@ var config = {
 			group: 'mtb:scale',
 			title: 'class:bicycle:mtb=-1',
 			query: '(nwr["class:bicycle:mtb"="-1"]({{bbox}});node(w););out;',
-			iconSrc: imgSrc + 'base/line.png',
+			iconSrc: imgSrc + 'base/tlineline.png',
 			iconStyle: 'background-color:#ff0000',
 			style: function () {
 				var fill = new ol.style.Fill({
@@ -882,7 +882,7 @@ var config = {
 			group: 'mtb:scale',
 			title: 'class:bicycle:mtb=-2',
 			query: '(nwr["class:bicycle:mtb"="-2"]({{bbox}});node(w););out;',
-			iconSrc: imgSrc + 'base/line.png',
+			iconSrc: imgSrc + 'base/tlineline.png',
 			iconStyle: 'background-color:#c23b22',
 			style: function () {
 				var fill = new ol.style.Fill({
@@ -903,7 +903,7 @@ var config = {
 			group: 'mtb:scale',
 			title: 'class:bicycle:mtb=-3',
 			query: '(nwr["class:bicycle:mtb"="-3"]({{bbox}});node(w););out;',
-			iconSrc: imgSrc + 'base/line.png',
+			iconSrc: imgSrc + 'base/tlineline.png',
 			iconStyle: 'background-color:#800000',
 			style: function () {
 				var fill = new ol.style.Fill({
