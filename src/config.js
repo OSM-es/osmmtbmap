@@ -586,7 +586,6 @@ var config = {
 							text: new ol.style.Text({
 								text: name,
 								color: 'rgba(0,128,0,0.4)',
-								font: '14px Gill Sans Extrabold',
 								offsetX : 0,
 								offsetY : 12
 							}),
@@ -623,7 +622,6 @@ var config = {
 							text: new ol.style.Text({
 								text: name,
 								color: 'rgba(0,128,0,0.4)',
-								font: '14px Gill Sans Extrabold',
 								placement: 'line',
 								offsetX : 0,
 								offsetY : 12
