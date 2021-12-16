@@ -560,6 +560,81 @@ var config = {
 			}
 		},
 		{
+			group: 'mtb',
+			title: 'mtb:name (node)',
+			query: '(node["mtb:name"][name]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/line.png',
+			iconStyle: 'background-color:#808080',
+			style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(128,128,128,0.1)'
+				});
+
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(128,128,128,0.4)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Circle({
+						fill: fill,
+						stroke: stroke,
+						radius: 5
+					}),
+							text: new ol.style.Text({
+								text: name,
+								color: 'rgba(0,128,0,0.4)',
+								font: '14px Gill Sans Extrabold',
+								offsetX : 0,
+								offsetY : 12
+							}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
+			group: 'mtb',
+			title: 'mtb:name (way)',
+			query: '(wr["mtb:name"][name]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/line.png',
+			iconStyle: 'background-color:#808080',
+			style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(128,128,128,0.1)'
+				});
+
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(128,128,128,0.4)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Circle({
+						fill: fill,
+						stroke: stroke,
+						radius: 5
+					}),
+							text: new ol.style.Text({
+								text: name,
+								color: 'rgba(0,128,0,0.4)',
+								font: '14px Gill Sans Extrabold',
+								placement: 'line',
+								offsetX : 0,
+								offsetY : 12
+							}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
 			group: 'mtb:scale',
 			title: 'mtb:scale=0',
 			query: '(nwr["mtb:scale"="0"]({{bbox}});node(w););out;',
