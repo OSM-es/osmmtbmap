@@ -553,6 +553,300 @@ var config = {
 			}
 		},
 		{
+			group: 'path',
+			title: 'mtb:scale=0',
+			query: '(nwr["mtb:scale"="0"]["highway"="path"]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/tdot.png',
+			iconStyle: 'background-color:#00ff00',
+			style: function () {
+				var fill = new ol.style.Fill({
+					color: 'rgba(0,255,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(0,255,0,0.4)',
+					width: 5
+				});
+				var style = new ol.style.Style({
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
+			group: 'path',
+			title: 'mtb:scale=1',
+			query: '(nwr["mtb:scale"="1"]["highway"="path"]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/tdot.png',
+			iconStyle: 'background-color:#ffff00',
+			style: function () {
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,255,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,255,0,0.4)',
+					width: 5
+				});
+				var style = new ol.style.Style({
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
+			group: 'path',
+			title: 'mtb:scale=2',
+			query: '(nwr["mtb:scale"="2"]["highway"="path"]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/tdot.png',
+			iconStyle: 'background-color:#ffe135',
+			style: function () {
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,225,53,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,225,53,0.4)',
+					width: 5
+				});
+				var style = new ol.style.Style({
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
+			group: 'path',
+			title: 'mtb:scale=3',
+			query: '(nwr["mtb:scale"="3"]["highway"="path"]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/tdot.png',
+			iconStyle: 'background-color:#ffa500',
+			style: function () {
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,165,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,165,0,0.4)',
+					width: 5
+				});
+				var style = new ol.style.Style({
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
+			group: 'path',
+			title: 'mtb:scale=4',
+			query: '(nwr["mtb:scale"="4"]["highway"="path"]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/tdot.png',
+			iconStyle: 'background-color:#ff0000',
+			style: function () {
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,0.4)',
+					width: 5
+				});
+				var style = new ol.style.Style({
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
+			group: 'path',
+			title: 'mtb:scale=5',
+			query: '(nwr["mtb:scale"="5"]["highway"="path"]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/tdot.png',
+			iconStyle: 'background-color:#c23b22',
+			style: function () {
+				var fill = new ol.style.Fill({
+					color: 'rgba(194,59,34,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(194,59,34,0.4)',
+					width: 5
+				});
+				var style = new ol.style.Style({
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
+			group: 'path',
+			title: 'mtb:scale=6',
+			query: '(nwr["mtb:scale"="6"]["highway"="path"]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/tdot.png',
+			iconStyle: 'background-color:#800000',
+			style: function () {
+				var fill = new ol.style.Fill({
+					color: 'rgba(128,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(128,0,0,0.4)',
+					width: 5
+				});
+				var style = new ol.style.Style({
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
+			group: 'track',
+			title: 'mtb:scale=0',
+			query: '(nwr["mtb:scale"="0"]["highway"="track"]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/tdot.png',
+			iconStyle: 'background-color:#00ff00',
+			style: function () {
+				var fill = new ol.style.Fill({
+					color: 'rgba(0,255,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(0,255,0,0.4)',
+					width: 5
+				});
+				var style = new ol.style.Style({
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
+			group: 'track',
+			title: 'mtb:scale=1',
+			query: '(nwr["mtb:scale"="1"]["highway"="track"]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/tdot.png',
+			iconStyle: 'background-color:#ffff00',
+			style: function () {
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,255,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,255,0,0.4)',
+					width: 5
+				});
+				var style = new ol.style.Style({
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
+			group: 'track',
+			title: 'mtb:scale=2',
+			query: '(nwr["mtb:scale"="2"]["highway"="track"]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/tdot.png',
+			iconStyle: 'background-color:#ffe135',
+			style: function () {
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,225,53,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,225,53,0.4)',
+					width: 5
+				});
+				var style = new ol.style.Style({
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
+			group: 'track',
+			title: 'mtb:scale=3',
+			query: '(nwr["mtb:scale"="3"]["highway"="track"]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/tdot.png',
+			iconStyle: 'background-color:#ffa500',
+			style: function () {
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,165,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,165,0,0.4)',
+					width: 5
+				});
+				var style = new ol.style.Style({
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
+			group: 'track',
+			title: 'mtb:scale=4',
+			query: '(nwr["mtb:scale"="4"]["highway"="track"]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/tdot.png',
+			iconStyle: 'background-color:#ff0000',
+			style: function () {
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,0.4)',
+					width: 5
+				});
+				var style = new ol.style.Style({
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
+			group: 'track',
+			title: 'mtb:scale=5',
+			query: '(nwr["mtb:scale"="5"]["highway"="track"]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/tdot.png',
+			iconStyle: 'background-color:#c23b22',
+			style: function () {
+				var fill = new ol.style.Fill({
+					color: 'rgba(194,59,34,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(194,59,34,0.4)',
+					width: 5
+				});
+				var style = new ol.style.Style({
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
+			group: 'track',
+			title: 'mtb:scale=6',
+			query: '(nwr["mtb:scale"="6"]["highway"="track"]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/tdot.png',
+			iconStyle: 'background-color:#800000',
+			style: function () {
+				var fill = new ol.style.Fill({
+					color: 'rgba(128,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(128,0,0,0.4)',
+					width: 5
+				});
+				var style = new ol.style.Style({
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
 			group: 'mtb:scale',
 			title: 'mtb:scale=0',
 			query: '(nwr["mtb:scale"="0"]({{bbox}});node(w););out;',
